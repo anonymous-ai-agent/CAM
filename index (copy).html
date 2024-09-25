@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Control Any Motion: Controllable Human Motion Generation via Dual-Space Categorical Straight-Through Estimator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="theme-color" content="#712cf9">
+    <style>
+      .timeline-container {
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        position: relative;
+      }
+
+      .timeline {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .segment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 16px;
+        padding: 5px;
+        border-right: 1px solid black;
+        flex: 1;
+        height: 60px;
+        /* Adjust this value to your desired height */
+      }
+
+      .inactive {
+        background-color: rgb(255, 255, 255);
+      }
+
+      .active {
+        background-color: #ffe2e2 !important;
+        /* Red active segment */
+        color: black;
+      }
+
+      .motion-inactive {
+        background-color: #ababab;
+        /* Light red or any other color to indicate inactive with motion */
+        color: black;
+        /* Adjust text color if necessary */
+      }
+
+      .moving-line {
+        position: absolute;
+        width: 2px;
+        height: 80%;
+        background-color: black;
+        top: 0;
+        left: 0;
+        top: 25px;
+        /* Adjust this value to move the line down */
+      }
+
+      video {
+        width: 100%;
+        max-width: 1000px;
+        height: 450px;
+        margin: 20px auto;
+        display: block;
+      }
+
+      /* Frame labels below the timelines */
+      .frame-labels {
+        position: relative;
+        width: 100%;
+        height: 20px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .frame-label {
+        font-weight: bold;
+        font-size: 14px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-8 col-md-8 mx-auto">
+            <h1>Control Any Motion: Controllable Human Motion Generation via Dual-Space Categorical Straight-Through Estimator </h1>
+            <h5>Anonymous</h5>
+          </div>
+        </div>
+
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-8 col-md-8 mx-auto">
+              <h2><span style='color:#2596be'>Dense Signals</span>  signals on pelvis
+              </h2>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-8 col-md-8 mx-auto">
+              <h2>Timeline Synchronization</h2>
+            </div>
+          </div>
+
+        </section>
+
+
+        <!-- First Timeline and Video -->
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <!-- Timeline container -->
+                <div class="timeline-container">
+                  <div class="moving-line" id="moving-line-1"></div>
+                  <h5>Upper Body</h5>
+                  <!-- Upper Body Timeline -->
+                  <div class="timeline" id="upper-body-timeline-1">
+                    <div class="segment" data-start="0" data-end="120">a person puts hands in the air.</div>
+                  </div>
+                  <h5>Lower Body</h5>
+                  <!-- Lower Body Timeline -->
+                  <div class="timeline" id="lower-body-timeline-1">
+                    <div class="segment" data-start="0" data-end="60">a person kicks left legs.</div>
+                    <div class="segment" data-start="60" data-end="120">a person jumps forward.</div>
+                  </div>
+                  <!-- Frame Labels (X-axis) -->
+                  <div class="frame-labels">
+                    <span class="frame-label">0 frames</span>
+                    <span class="frame-label">60</span>
+                    <span class="frame-label">120 frames</span>
+                  </div>
+                </div>
+                <!-- Video -->
+                <video id="video-1" controls autoplay muted loop playsinline>
+                  <source src="./assets/timeline/timeline1.webm" type="video/mp4">
+                </video>
+                <h5> Generating motion for the upper body from frames 0 to 120 based on the text <span style='color:#2596be'>“a person raises their hands in the air.”</span> For the lower body, motion is generated from frames 0 to 60 based on <span style='color:#2596be'>“a person kicks their left leg.”</span> and from frames 60 to 120 based on <span style='color:#2596be'>“a person jumps forward.”</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Timeline and Video -->
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="timeline-container">
+                  <div class="moving-line" id="moving-line-2"></div>
+                  <!-- Upper Body Timeline -->
+                  <h5>Upper Body</h5>
+                  <div class="timeline" id="upper-body-timeline-2">
+                    <div class="segment" data-start="0" data-end="120">shake with their left leg</div>
+                  </div>
+                  <h5>Lower Body</h5>
+                  <!-- Lower Body Timeline -->
+                  <div class="timeline" id="lower-body-timeline-2">
+                    <!-- Inactive segment (empty) from 0 to 60 -->
+                    <div class="segment inactive" data-start="0" data-end="0"></div>
+                    <!-- Active segment with text from 60 to 120 -->
+                    <div class="segment active" data-start="60" data-end="120">the person is bending over forward</div>
+                  </div>
+                  <!-- Frame Labels (X-axis) -->
+                  <div class="frame-labels">
+                    <span class="frame-label">0 frames</span>
+                    <span class="frame-label">60 </span>
+                    <span class="frame-label">120 frames</span>
+                  </div>
+                </div>
+                <!-- Video -->
+                <video id="video-2" controls autoplay muted loop playsinline>
+                  <source src="./assets/timeline/timeline2.webm" type="video/mp4">
+                </video>
+                <h5> Generating motion for the upper body from frames 0 to 120 based on the text <span style='color:#2596be'>“shake with their left leg”</span> For the lower body, motion is generated from frames 60 to 120 based on <span style='color:#2596be'>“the person is bending over forward.”</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script>
+      // Function to update the timeline for any video
+      function updateTimeline(videoId, lineId) {
+        const video = document.getElementById(videoId);
+        const movingLine = document.getElementById(lineId);
+        const timelineContainer = movingLine.closest('.timeline-container');
+        const segments = Array.from(timelineContainer.querySelectorAll('.segment'));
+        const totalFrames = 120; // Total frames for this video
+        video.addEventListener('timeupdate', () => {
+          const videoDuration = video.duration;
+          const currentTime = video.currentTime;
+          const playPercentage = (currentTime / videoDuration) * 100;
+          // Update the moving line's position
+          const timelineWidth = timelineContainer.offsetWidth;
+          const newLeftPosition = (playPercentage / 100) * timelineWidth;
+          movingLine.style.left = `${newLeftPosition}px`;
+          // Calculate the current frame based on video time
+          const currentFrame = (currentTime / videoDuration) * totalFrames;
+          // Loop through each segment and activate or apply motion-inactive if needed
+          segments.forEach(segment => {
+            const startFrame = parseInt(segment.dataset.start, 10); // Start frame from data attribute
+            const endFrame = parseInt(segment.dataset.end, 10); // End frame from data attribute
+            if (currentFrame >= startFrame && currentFrame <= endFrame) {
+              segment.classList.add('active');
+              segment.classList.remove('motion-inactive');
+            } else if (startFrame !== endFrame) {
+              // Apply motion-inactive when segment has a range but is not currently active
+              segment.classList.add('motion-inactive');
+              segment.classList.remove('active');
+            } else {
+              // Remove all classes if no action is required
+              segment.classList.remove('active', 'motion-inactive');
+            }
+          });
+        });
+        video.addEventListener('loadedmetadata', () => {
+          movingLine.style.left = '0px';
+        });
+        video.addEventListener('play', () => {
+          movingLine.style.left = '0px';
+        });
+      }
+      // Initialize timelines for both videos
+      updateTimeline('video-1', 'moving-line-1');
+      updateTimeline('video-2', 'moving-line-2');
+    </script>
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
