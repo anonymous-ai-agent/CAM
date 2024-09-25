@@ -227,12 +227,14 @@
             }
 
             .custom-video-container {
-              width: 100%; /* Full width of the parent container */
+              width: 100%;
+              /* Full width of the parent container */
             }
-          
+
             .custom-video {
               width: 100%;
-              max-width: 1000px; /* Set a max-width to control video width */
+              max-width: 1000px;
+              /* Set a max-width to control video width */
             }
           </style>
         </head>
@@ -249,30 +251,23 @@
                 <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
                     <h2>
-                      <span style='color:#2596be'>Dense Signals</span> signals on pelvis
+                      <span style='color:#2596be'>Dense Signals</span> on Pelvis
                     </h2>
                   </div>
                 </div>
               </section>
               <div class="album py-5 bg-body-tertiary">
                 <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <h3>Text to Motion 1:</h3>
-                      <h6>"A person is performing lunges"</h6>
-                    </div>
-                  </div>
+
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                       <div class="card shadow-sm">
                         <video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
-                          <source src="./assets/timeline/timeline1.webm" type="video/mp4">
+                          <source src="./assets/pelvis/dense/dense1_a person walks forward.webm" type="video/mp4">
                         </video>
-                        <div class="card-body mmm-card">
-                          <p class="card-text">BAMM (our)</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-body-secondary">(correct lunges posture and hand posture while doing lunges is more realistic than ground truth)</small>
-                          </div>
+                        <div class="card-body">
+                          <p class="card-text">a person walks</p>
+                          <!-- <div class="d-flex justify-content-between align-items-center"><small class="text-body-secondary">(correct lunges posture and hand posture while doing lunges is more realistic than ground truth)</small></div> -->
                         </div>
                       </div>
                     </div>
@@ -302,28 +297,58 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                  <div class="col-lg-8 col-md-8 mx-auto">
+                    <h2>
+                      <span style='color:#2596be'>Dense Signals</span> on Hand Wrist
+                    </h2>
+                  </div>
+                </div>
+              </section>
+              <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                       <div class="card shadow-sm">
-                        <video id="text-to-motion_mld" autoplay controls muted loop playsinline height="100%">
+                        <video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
+                          <source src="./assets/wrist/wrist1.webm" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                          <p class="card-text">a person walks</p>
+                          <!-- <div class="d-flex justify-content-between align-items-center"><small class="text-body-secondary">(correct lunges posture and hand posture while doing lunges is more realistic than ground truth)</small></div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <video id="text-to-motion_gt" autoplay controls muted loop playsinline height="100%">
                           <source src="./assets/timeline/timeline1.webm" type="video/mp4">
                         </video>
                         <div class="card-body">
-                          <p class="card-text">T2M-GPT</p>
+                          <p class="card-text">Ground Truth</p>
                           <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-body-secondary">(performing squad instead of lunges)</small>
+                            <small class="text-body-secondary"></small>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card shadow-sm">
-                        <video id="text-to-motion_mdm" autoplay controls muted loop playsinline height="100%">
+                        <video id="text-to-motion_t2mgpt" autoplay controls muted loop playsinline height="100%">
                           <source src="./assets/timeline/timeline1.webm" type="video/mp4">
                         </video>
                         <div class="card-body">
-                          <p class="card-text">MDM</p>
+                          <p class="card-text">MoMask</p>
                           <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-body-secondary">(not performing lunges)</small>
+                            <small class="text-body-secondary">(performing squad instead of lunges)</small>
                           </div>
                         </div>
                       </div>
@@ -331,6 +356,87 @@
                   </div>
                 </div>
               </div>
+
+
+
+
+
+
+              <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                  <div class="col-lg-8 col-md-8 mx-auto">
+                    <h2>
+                      <span style='color:#2596be'>Sparse Signals</span> on Pelvis
+                    </h2>
+                  </div>
+                </div>
+              </section>
+              <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
+                          <source src="./assets/pelvis/sparse/sparse1_a person walks forward.webm" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                          <p class="card-text">a person walks</p>
+                          <!-- <div class="d-flex justify-content-between align-items-center"><small class="text-body-secondary">(correct lunges posture and hand posture while doing lunges is more realistic than ground truth)</small></div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <video id="text-to-motion_gt" autoplay controls muted loop playsinline height="100%">
+                          <source src="./assets/timeline/timeline1.webm" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                          <p class="card-text">Ground Truth</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-body-secondary"></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <video id="text-to-motion_t2mgpt" autoplay controls muted loop playsinline height="100%">
+                          <source src="./assets/timeline/timeline1.webm" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                          <p class="card-text">MoMask</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-body-secondary">(performing squad instead of lunges)</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
@@ -410,7 +516,6 @@
                   </div>
                 </div>
               </div>
-
               <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
@@ -419,41 +524,34 @@
                 </div>
               </section>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2 justify-content-center">
-                <div class="col custom-video-container"> <!-- Custom container to control full width -->
+                <div class="col custom-video-container">
+                  <!-- Custom container to control full width -->
                   <div class="card shadow-sm">
                     <video id="inbtween_mmm" class="custom-video" autoplay controls muted loop playsinline>
                       <source src="./assets/avoid/avoid1.webm" type="video/mp4">
                     </video>
                     <div class="card-bod">
-                      <h4>the man walks zig zag.</h4> 
-                      <!-- <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-body-secondary">(More crouches in realistic motion)</small>
-                      </div> -->
+                      <h4>the man walks zig zag.</h4>
+                      <!-- <div class="d-flex justify-content-between align-items-center"><small class="text-body-secondary">(More crouches in realistic motion)</small></div> -->
                     </div>
                   </div>
                 </div>
               </div>
-              
-
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2 justify-content-center">
-                <div class="col custom-video-container"> <!-- Custom container to control full width -->
+                <div class="col custom-video-container">
+                  <!-- Custom container to control full width -->
                   <div class="card shadow-sm">
                     <video id="inbtween_mmm" class="custom-video" autoplay controls muted loop playsinline>
                       <source src="./assets/avoid/avoid2.webm" type="video/mp4">
                     </video>
                     <div class="card-body">
-                      <h4>the man walks forward in a straight line.</h4> 
-                      <!-- <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-body-secondary">(More crouches in realistic motion)</small>
-                      </div> -->
+                      <h4>the man walks forward in a straight line.</h4>
+                      <!-- <div class="d-flex justify-content-between align-items-center"><small class="text-body-secondary">(More crouches in realistic motion)</small></div> -->
                     </div>
                   </div>
                 </div>
               </div>
-
-
           </main>
-
           <script>
             // Function to update the timeline for any video
             function updateTimeline(videoId, lineId) {
