@@ -205,8 +205,9 @@
             video {
               width: 100%;
               max-width: 1000px;
-              height: 450px;
-              margin: 20px auto;
+              height: auto;
+              /* height: 450px; */
+              /* margin: 20px auto; */
               display: block;
             }
 
@@ -236,6 +237,15 @@
               max-width: 1000px;
               /* Set a max-width to control video width */
             }
+            .album {
+              /* padding-bottom: 30px; */
+              margin-bottom: 40px;
+              /* background-color: #eee; */
+            }
+            .margin100 {
+              margin-left:100px;
+              margin-right:100px;
+            }
           </style>
         </head>
         <body>
@@ -250,23 +260,21 @@
               
 
               <section class="py-5 text-center container">
-                <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
                     <h2> Compared to SOTA - <span style='color:#f67e7e'>Multiple Joints</span>
                     </h2>
                   </div>
-                </div>
               </section>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album margin100">
                 <div class="container">
                   <div class="row">
                     <div class="col">
                       <h5>a person crosses their arms for chest fly</h5>
                     </div>
                   </div>
-                  <div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 g-3">
+                  <div class="row row-cols-3">
                     <div class="col">
-                      <div class="card h-100 shadow-sm">
+                      <div class="card">
                         <video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
                           <source src="./assets/sota/omni/chest_fly.mp4" type="video/mp4">
                         </video>
@@ -305,7 +313,7 @@
                   </div>
                 </div>
               </div>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album margin100">
                 <div class="container">
                   <div class="row">
                     <div class="col">
@@ -352,7 +360,7 @@
                   </div>
                 </div>
               </div>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album margin100">
                 <div class="container">
                   <div class="row">
                     <div class="col">
@@ -399,7 +407,7 @@
                   </div>
                 </div>
               </div>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album margin100">
                 <div class="container">
                   <div class="row">
                     <div class="col">
@@ -454,14 +462,17 @@
                   </div>
                 </div>
               </section>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album bg-body-tertiary">
                 <div class="container">
                   <div class="row">
                     <div class="col">
                       <h5>a person walks forward and waves his hands</h5>
                     </div>
+                    <div class="col">
+                      <h5>a person dances to salsa music</h5>
+                    </div>
                   </div>
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+                  <div class="row">
                     <div class="col">
                       <div class="card h-100 shadow-sm">
                         <video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
@@ -488,17 +499,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="album py-5 bg-body-tertiary">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <h5>a person dances to salsa music</h5>
-                    </div>
-                  </div>
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+
                     <div class="col">
                       <div class="card h-100 shadow-sm">
                         <video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
@@ -528,14 +529,15 @@
                   </div>
                 </div>
               </div>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album bg-body-tertiary">
                 <div class="container">
                   <div class="row">
                     <div class="col">
                       <h5>a person walks forward and come back to the same position from where we started</h5>
                     </div>
                   </div>
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+                  <div class="row">
+                    <div class="col"></div>
                     <div class="col">
                       <div class="card h-100 shadow-sm">
                         <video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
@@ -562,17 +564,17 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="col"></div>
                   </div>
                 </div>
               </div>
               <section class="py-5 text-center container">
-                <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
                     <h2> Dense Signals </h2>
                   </div>
-                </div>
               </section>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album margin100 bg-body-tertiary">
                 <div class="container">
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
@@ -809,13 +811,11 @@
                 </div>
               </div>
               <section class="py-5 text-center container">
-                <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
                     <h2> Sparse Signals </h2>
                   </div>
-                </div>
               </section>
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album margin100 bg-body-tertiary">
                 <div class="container">
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
@@ -937,14 +937,12 @@
                 </div>
               </div>
               <section class="py-5 text-center container">
-                <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
                     <h2>Body Part Timeline Control</h2>
                   </div>
-                </div>
               </section>
               <!-- First Timeline and Video -->
-              <div class="album py-5 bg-body-tertiary">
+              <div class="album margin100 bg-body-tertiary">
                 <div class="container">
                   <div class="row">
                     <div class="col">
@@ -975,7 +973,7 @@
                         </div>
                       </div>
                       <!-- Video -->
-                      <video id="video-1" controls autoplay muted loop playsinline>
+                      <video id="video-1" style="height: 350px; margin: 20px auto;" controls autoplay muted loop playsinline>
                         <source src="./assets/timeline/timeline1.mp4" type="video/mp4">
                       </video>
                       <h5> 
@@ -1023,7 +1021,7 @@
                         </div>
                       </div>
                       <!-- Video -->
-                      <video id="video-2" controls autoplay muted loop playsinline>
+                      <video id="video-2"  style="height: 350px; margin: 20px auto;" controls autoplay muted loop playsinline>
                         <source src="./assets/timeline/timeline2.mp4" type="video/mp4">
                       </video>
                       <h5> Generating upper body motion from frames 0 to 120 based on the prompt: <span style='color:#2596be'>"the person is bending over forward"</span> Simultaneously, lower body motion is generated from frames 0 to 120 based on the prompt: <span style='color:#2596be'>"shake with their left leg"</span> </h5>                    
@@ -1034,17 +1032,15 @@
                 </div>
               </div>
               <section class="py-5 text-center container">
-                <div class="row py-lg-5">
                   <div class="col-lg-8 col-md-8 mx-auto">
                     <h2>Obstacle Avoidance</h2>
                   </div>
-                </div>
               </section>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2 justify-content-center">
                 <div class="col custom-video-container">
                   <!-- Custom container to control full width -->
                   <div class="card h-100 shadow-sm">
-                    <video id="inbtween_mmm" class="custom-video" autoplay controls muted loop playsinline>
+                    <video id="inbtween_mmm" class="custom-video"  style="height: 350px; margin: 20px auto;" autoplay controls muted loop playsinline>
                       <source src="./assets/avoid/avoid1.mp4" type="video/mp4">
                     </video>
                     <div class="card-bod">
@@ -1058,7 +1054,7 @@
                 <div class="col custom-video-container">
                   <!-- Custom container to control full width -->
                   <div class="card h-100 shadow-sm">
-                    <video id="inbtween_mmm" class="custom-video" autoplay controls muted loop playsinline>
+                    <video id="inbtween_mmm" class="custom-video"  style="height: 350px; margin: 20px auto;" autoplay controls muted loop playsinline>
                       <source src="./assets/avoid/avoid2.mp4" type="video/mp4">
                     </video>
                     <div class="card-body">
